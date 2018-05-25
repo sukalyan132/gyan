@@ -7,7 +7,7 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="content-body">
   <ion-list>
     <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
       <ion-icon [name]="item.icon" item-start></ion-icon>
@@ -15,6 +15,11 @@
       <div class="item-note" item-end>
         {{item.note}}
       </div>
+    </button>
+    <button ion-item  (click)="logOutFun()">
+      <ion-icon  item-start></ion-icon>
+      LogOut
+      
     </button>
   </ion-list>
   <div *ngIf="selectedItem" padding>

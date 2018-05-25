@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>gyanodyan</name>
-    <description>An awesome Ionic/Cordova app.</description>
-    <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
+<widget id="io.gyanodyan.app" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Gyanodyan</name>
+    <description>An awesome gyanodyan app.</description>
+    <author email="hi@ionicframework" href="http://ionicframework.com/">Gyanodyan Team</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -11,14 +11,23 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <preference name="ScrollEnabled" value="false" />
-    <preference name="android-minSdkVersion" value="19" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="android-minSdkVersion" value="16" />
     <preference name="BackupWebStorage" value="none" />
     <preference name="SplashMaintainAspectRatio" value="true" />
     <preference name="FadeSplashScreenDuration" value="300" />
     <preference name="SplashShowOnlyFirstTime" value="false" />
+    <preference name="AutoHideSplashScreen" value="false" />
     <preference name="SplashScreen" value="screen" />
-    <preference name="SplashScreenDelay" value="3000" />
+    <preference name="SplashScreenDelay" value="7000" />
+    <preference name="orientation" value="portrait" />
+    <preference name="windows-target-version" value="10.0" />
+    <preference name="android-windowSoftInputMode" value="adjustResize" />
+    <preference name="fullscreen" value="false" />
+    <preference name="AndroidLaunchMode" value="singleTask" />
+    <access launch-external="yes" origin="*" />
     <platform name="android">
         <allow-intent href="market:*" />
         <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
@@ -81,4 +90,6 @@
     <plugin name="cordova-plugin-splashscreen" spec="5.0.2" />
     <plugin name="cordova-plugin-ionic-webview" spec="1.1.19" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="2.0.5" />
+    <plugin name="cordova-plugin-inappbrowser" spec="^3.0.0" />
+    <engine name="android" spec="~7.0.0" />
 </widget>

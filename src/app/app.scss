@@ -14,3 +14,22 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+
+.toolbar-background-md {
+background-color: #8c000d !important;
+}
+
+.content-body{
+	font-family: Arial,sans-serif; padding: 0; margin: 0; background: url('../assets/imgs/login-bg.jpg') no-repeat fixed center top / cover  transparent !important}
+.item-md{
+	background-color: transparent;
+	border-bottom: 2px solid #8c000d;
+}
+.img-one{
+	height: 50px;
+
+}
+.scroll-content{
+	overflow-y: hidden;
+}

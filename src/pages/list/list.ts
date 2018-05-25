@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
+import { LoginPage } from '../login/login';
+
 @Component({
   selector: 'page-list',
   templateUrl: 'list.html'
@@ -33,5 +35,9 @@ export class ListPage {
     this.navCtrl.push(ListPage, {
       item: item
     });
+  }
+  /////////////////// logout function ///////////////
+  logOutFun(){
+    this.navCtrl.setRoot(LoginPage);
   }
 }
